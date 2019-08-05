@@ -1,0 +1,19 @@
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.chimbori.liteapp.starter">
+  <application>
+    <provider
+      android:name=".AssetProvider"
+      android:authorities="${applicationId}.assetprovider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+    </provider>
+    <activity
+      android:name=".InstallActivity"
+      android:resizeableActivity="true"
+      android:exported="true"
+      android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth"
+      android:excludeFromRecents="true"
+      />
+  </application>
+</manifest>
