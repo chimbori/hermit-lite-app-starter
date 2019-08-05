@@ -9,7 +9,6 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 
 public class HermitIntentStarter {
-
   @NonNull
   public static Intent createSimpleLiteAppIntent(@NonNull String startUrl) {
     Uri startUri = Uri.parse(startUrl);
