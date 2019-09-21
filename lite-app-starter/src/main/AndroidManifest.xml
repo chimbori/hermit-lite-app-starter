@@ -1,23 +1,32 @@
-<manifest
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
   package="com.chimbori.liteapp.starter">
 
   <application>
     <uses-library
       android:name="android.test.runner"
       android:required="false"/>
+
     <provider
       android:name=".AssetProvider"
       android:authorities="${applicationId}.assetprovider"
       android:exported="false"
-      android:grantUriPermissions="true">
-    </provider>
+      android:grantUriPermissions="true"/>
+
+    <activity
+      android:name=".IntentStarterActivity"
+      android:excludeFromRecents="true"
+      android:exported="true"
+      android:resizeableActivity="true"
+      tools:targetApi="n"/>
+
     <activity
       android:name=".InstallActivity"
       android:excludeFromRecents="true"
       android:exported="true"
       android:resizeableActivity="true"
       android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth"
-      />
+      tools:targetApi="n"/>
+
   </application>
 </manifest>
