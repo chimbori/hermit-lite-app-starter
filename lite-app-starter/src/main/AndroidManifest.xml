@@ -18,7 +18,12 @@
       android:excludeFromRecents="true"
       android:exported="true"
       android:resizeableActivity="true"
-      tools:targetApi="n"/>
+      tools:targetApi="n">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
 
     <activity
       android:name=".InstallActivity"
