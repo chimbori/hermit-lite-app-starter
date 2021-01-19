@@ -1,12 +1,10 @@
-package com.chimbori.liteapp.starter
+package com.chimbori.liteappstarter
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.Intent.ACTION_VIEW
 import android.net.Uri
-import com.chimbori.liteapp.starter.Constants.HERMIT_ACTIVITY_NAME
-import com.chimbori.liteapp.starter.Constants.HERMIT_PACKAGE_NAME
 
 object HermitIntentStarter {
   fun createLiteAppIntent(startUrl: String) =
@@ -17,4 +15,10 @@ object HermitIntentStarter {
   } catch (e: ActivityNotFoundException) {
     activity.startActivity(Intent(activity, InstallActivity::class.java))
   }
+
+  /** Package name of the Hermit app.  */
+  const val HERMIT_PACKAGE_NAME = "com.chimbori.hermitcrab"
+
+  /** Component name of the deep-linked Activity in Hermit to use to open a Lite App.  */
+  private const val HERMIT_ACTIVITY_NAME = "com.chimbori.hermitcrab.WebActivity"
 }

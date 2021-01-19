@@ -1,7 +1,7 @@
-package com.chimbori.liteapp.starter
+package com.chimbori.liteappstarter
 
 import android.content.Intent.ACTION_VIEW
-import com.chimbori.liteapp.starter.HermitIntentStarter.createLiteAppIntent
+import com.chimbori.liteappstarter.HermitIntentStarter.createLiteAppIntent
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

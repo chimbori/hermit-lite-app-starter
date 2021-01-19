@@ -1,8 +1,8 @@
-package com.chimbori.liteapp.starter
+package com.chimbori.liteappstarter
 
 import android.app.Activity
 import android.os.Bundle
-import com.chimbori.liteapp.starter.HermitIntentStarter.launchLiteApp
+import com.chimbori.liteappstarter.HermitIntentStarter.launchLiteApp
 
 /**
  * This is the Simple version of the APK where you only need to specify a Name, URL, and an Icon.
