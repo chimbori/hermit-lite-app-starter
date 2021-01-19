@@ -14,7 +14,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
-import com.chimbori.liteappstarter.HermitIntentStarter.HERMIT_PACKAGE_NAME
+import com.chimbori.liteappstarter.LiteAppStarterActivity.Companion.HERMIT_PACKAGE_NAME
 
 class InstallActivity : Activity(), View.OnClickListener {
   override fun onCreate(savedInstanceState: Bundle?) {

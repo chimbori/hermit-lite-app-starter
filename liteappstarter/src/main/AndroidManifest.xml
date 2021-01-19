@@ -8,7 +8,7 @@
       android:required="false"/>
 
     <activity
-      android:name=".IntentStarterActivity"
+      android:name=".LiteAppStarterActivity"
       android:excludeFromRecents="true"
       android:exported="true"
       android:resizeableActivity="true"

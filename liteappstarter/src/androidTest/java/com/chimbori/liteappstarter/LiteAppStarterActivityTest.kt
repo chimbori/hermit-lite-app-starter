@@ -1,13 +1,13 @@
 package com.chimbori.liteappstarter
 
 import android.content.Intent.ACTION_VIEW
-import com.chimbori.liteappstarter.HermitIntentStarter.createLiteAppIntent
+import com.chimbori.liteappstarter.LiteAppStarterActivity.Companion.createLiteAppIntent
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class HermitIntentStarterTest {
+class LiteAppStarterActivityTest {
   @Test
-  fun testCreateSimpleLiteAppIntent() {
+  fun testCreateLiteAppIntent() {
     val actualIntent = createLiteAppIntent("https://example.org/")
     assertEquals(ACTION_VIEW, actualIntent.action)
     assertEquals("https://example.org/", actualIntent.dataString)
