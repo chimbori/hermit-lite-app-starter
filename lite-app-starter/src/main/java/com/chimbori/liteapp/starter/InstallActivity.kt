@@ -32,6 +32,7 @@ class InstallActivity : Activity(), View.OnClickListener {
       Html.fromHtml(getString(R.string.hermit_description))
     }
     findViewById<View>(R.id.install_dialog_install_button).setOnClickListener(this)
+    findViewById<View>(R.id.install_dialog_cancel_button).setOnClickListener(this)
   }
 
   override fun onClick(view: View) {
