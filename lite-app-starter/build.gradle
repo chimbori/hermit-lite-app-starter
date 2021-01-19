@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
   compileSdkVersion 29
@@ -21,10 +22,15 @@ android {
 
 dependencies {
   implementation 'androidx.annotation:annotation:1.1.0'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
   androidTestImplementation 'androidx.test:core:1.3.0'
   androidTestImplementation 'androidx.test:runner:1.3.0'
   androidTestImplementation 'androidx.test:rules:1.3.0'
   androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+}
+
+repositories {
+  mavenCentral()
 }
